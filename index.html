@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font-awesome-cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Guessing game</title>
+    <link rel="stylesheet" href="./syle.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="gaming-title">Guessing Number</h1>
+      <hr />
+
+      <div class="gaming-container">
+        <div class="game">
+          <p class="attemptLeft">You Have 5 Times to play</p>
+          <div class="input-area">
+            <input
+              type="number"
+              class="numberInput"
+              id="number"
+              placeholder="Enter Your guess"
+            />
+            <button class="checkBtn">Check Result</button>
+          </div>
+
+          <div class="result">
+            <h2 class="result-title">Result</h2>
+            <hr />
+            <div class="Displying-result">
+              <p class="error">Your Result will appear here</p>
+              <p class="randomNumber">Random Number will display here</p>
+              <div class="score">
+                <h2 class="won-result">Won:-</h2>
+                <h2 class="lost-result">Lost:-</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modileHr"></div>
+
+        <div class="howToPlay">
+          <div class="question">
+            <h2>How to play?</h2>
+            <i class="fa-solid fa-angle-down arrow"></i>
+          </div>
+          <p class="howToPlayText">
+            You can enter Number between 1 - 5 in this input field. After check
+            the result you will see the final score.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

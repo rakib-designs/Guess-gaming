@@ -1,0 +1,168 @@
+/* Google fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;500;600;700;800&display=swap");
+
+/* Google Fonts */
+
+/* browser reset code */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* browser reset code */
+
+body {
+  background: #3c40c6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* container section */
+.container {
+  width: 800px;
+  padding: 30px 20px;
+  border-radius: 5px;
+  background: #0fbcf9;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  position: relative;
+}
+
+.container::after {
+  content: "";
+  position: absolute;
+  top: 85px;
+  left: 50%;
+  width: 2px;
+  height: 75%;
+  background-color: #d2dae2;
+}
+
+.gaming-title {
+  color: #d2dae2;
+  font-size: 40px;
+  text-align: center;
+  text-shadow: 3px 4px 7px rgba(81, 67, 21, 0.8);
+}
+
+.numberInput {
+  padding: 10px 10px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+.checkBtn {
+  padding: 10px 10px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.attemptLeft {
+  margin: 10px 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.gaming-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.howToPlay {
+  width: 350px;
+}
+
+.howToPlay .question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.howToPlay .question i {
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.howToPlayText {
+  font-weight: 500;
+  margin: 5px 0;
+  padding: 10px;
+  background-color: #ecf0f1;
+  display: none;
+}
+
+.arrow_click {
+  transform: rotate(180deg);
+}
+
+.show__text {
+  display: block;
+  transform: 0.6s;
+}
+
+/* Result Section Start here */
+
+.result {
+  padding-top: 30px;
+}
+
+.result-title {
+  font-size: 20px;
+  border-left: 3px solid #485460;
+  padding-left: 2px;
+}
+
+.Displying-result {
+  height: 100px;
+}
+
+.Displying-result .error {
+  margin: 10px 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.dont__show {
+  pointer-events: none;
+}
+
+.modileHr {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    height: 100vh;
+    background: #0fbcf9;
+  }
+  .score {
+    height: 100px;
+    margin: 20px 0;
+  }
+
+  .gaming-container {
+    flex-direction: column;
+  }
+  .container::after {
+    display: none;
+  }
+
+  .howToPlay {
+    width: 100%;
+    margin: 40px 0;
+  }
+}
+
+/* Result Section End here */
+
+/* container section */
